@@ -11,6 +11,8 @@
 ## project structure:
 
 ```
+├── core
+│   └── core.go
 ├── go.mod
 ├── main.go
 └── README.md
@@ -27,7 +29,16 @@ go get github.com/kenjitheman/zipman
 ## usage
 
 ```
+package main
 
+import "github.com/kenjitheman/zipman"
+
+func main() {
+	zipman.Zip("./file.zip", []string{"./man.txt", "./hello.txt"})
+}
+
+➜  zipman git:(master) ✗ go run main.go
+[SUCCESS] Zip compression completed successfully for file: ./file.zip
 ```
 
 ## contributing
@@ -38,4 +49,3 @@ go get github.com/kenjitheman/zipman
 ## license
 
 - [MIT](https://choosealicense.com/licenses/mit/)
-
