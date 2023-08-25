@@ -11,11 +11,6 @@
 ## supported formats:
 
  - `zip`
- - `rar`
- - `tar`
- - `gz`
- - `bzip2`
- - `7z`
 
 ## project structure:
 
