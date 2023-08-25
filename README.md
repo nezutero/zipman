@@ -1,4 +1,4 @@
-<h2 align="center">zipman - zip compressor in golang</h2>
+<h2 align="center">zipman - archive compressor/extractor golang library</h2>
 
 ###
 
@@ -8,11 +8,25 @@
 
 ###
 
+## supported formats:
+
+ - `zip`
+ - `rar`
+ - `tar`
+ - `gz`
+ - `bzip2`
+ - `7z`
+
 ## project structure:
 
 ```
 ├── core
-│   └── core.go
+│   ├── 7z.go
+│   ├── bzip2.go
+│   ├── gz.go
+│   ├── rar.go
+│   ├── tar.go
+│   └── zip.go
 ├── go.mod
 ├── main.go
 └── README.md
