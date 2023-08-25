@@ -21,7 +21,7 @@
 - use go get:
 
 ```
-go get github.com/kenjitheman/himitsu
+go get github.com/kenjitheman/zipman
 ```
 
 ## usage
