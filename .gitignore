@@ -9,11 +9,3 @@ go.work
 /config.local.hcl
 /bin/
 .env
-*.txt
-*.tar
-*.tar.gz
-*.zip
-*.gz
-*.7z
-*.bzip2
-*.rar
