@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 )
 
-func Zip(filename string, filesToCompress []string) {
+func CompressToZip(filename string, filesToCompress []string) {
 	zipFile, err := os.Create(filename)
 	if err != nil {
 		fmt.Println("[ERROR] error creating zip file:", err)
@@ -59,6 +59,7 @@ func AddFileToZip(zipWriter *zip.Writer, filename string) error {
 	}
 
 	_, err = io.Copy(writer, file)
+	fmt.Println("[SUCCESS] added to zip successfully")
 	return err
 }
 
@@ -104,6 +105,7 @@ func ExtractZip(zipFilename, destFoldername string) error {
 			return err
 		}
 	}
-
+	
+	fmt.Println("[SUCCESS] zip extracted successfully")
 	return nil
 }

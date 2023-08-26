@@ -11,6 +11,7 @@
 ## supported formats:
 
  - `zip`
+ - `tar.gz`
 
 ## project structure:
 
@@ -18,11 +19,11 @@
 ├── core
 │   ├── 7z.go
 │   ├── bzip2.go
-│   ├── gz.go
 │   ├── rar.go
-│   ├── tar.go
+│   ├── targz.go
 │   └── zip.go
 ├── go.mod
+├── LICENSE
 ├── main.go
 └── README.md
 ```
@@ -43,7 +44,7 @@ package main
 import "github.com/kenjitheman/zipman"
 
 func main() {
-	zipman.Zip("./file.zip", []string{"./man.txt", "./hello.txt"})
+	zipman.CompressToZip("./file.zip", []string{"./man.txt", "./hello.txt"})
     
     // zipman.AddFileToZip(zipWriter *zip.Writer, filename string)
 	// zipman.ExtractZip("./file.zip", "./man")
