@@ -19,7 +19,9 @@
 ├── core
 │   ├── 7z.go
 │   ├── bzip2.go
+│   ├── gz.go
 │   ├── rar.go
+│   ├── tar.go
 │   ├── targz.go
 │   └── zip.go
 ├── go.mod

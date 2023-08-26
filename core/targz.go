@@ -30,8 +30,8 @@ func CompressToTarGz(tarGzFilename string, filesToCompress []string) error {
 			return err
 		}
 	}
-	
-	fmt.Println("[SUCCESS] tar.gz created successfully")
+
+	fmt.Println("[SUCCESS] tar.gz compresssion completed successfully for  file: ", tarGzFilename)
 	return nil
 }
 
