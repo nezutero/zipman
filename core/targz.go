@@ -67,7 +67,7 @@ func addFileToTar(tarWriter *tar.Writer, filename string) error {
 	return err
 }
 
-func ExtractFromTarGz(tarGzFilename string, destFolder string) error {
+func ExtractTarGz(tarGzFilename string, destFolder string) error {
 	tarGzFile, err := os.Open(tarGzFilename)
 	if err != nil {
 		fmt.Println("[ERROR] opening tar")

@@ -69,7 +69,7 @@ func AddFileToGz(existingFilename, filename string) error {
 	return nil
 }
 
-func ExtractFromGz(gzFilename, destFolder string) error {
+func ExtractGz(gzFilename, destFolder string) error {
 	inputFile, err := os.Open(gzFilename)
 	if err != nil {
 		return err
