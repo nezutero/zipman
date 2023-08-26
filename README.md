@@ -44,6 +44,9 @@ import "github.com/kenjitheman/zipman"
 
 func main() {
 	zipman.Zip("./file.zip", []string{"./man.txt", "./hello.txt"})
+    
+    // zipman.AddFileToZip(zipWriter *zip.Writer, filename string)
+	// zipman.ExtractZip("./file.zip", "./man")
 }
 
 ➜  zipman git:(master) ✗ go run main.go
