@@ -10,12 +10,12 @@
 
 ## supported formats and functionality:
 
-- `zip`     (compression/extraction/adding)
-- `tar`     (compression/extraction/adding)
-- `tar.gz`  (compression/extraction/adding)
-- `7z`      (compression/extraction)
-- `bz2`     (compression/extraction)
-- `rar`     (extraction)
+- `zip` (compression/extraction/adding)
+- `tar` (compression/extraction/adding)
+- `tar.gz` (compression/extraction/adding)
+- `7z` (compression/extraction)
+- `bz2` (compression/extraction)
+- `rar` (extraction)
 
 ## project structure:
 
@@ -54,8 +54,6 @@ func main() {
 	// zipman.ExtractZip("./file.zip", "./man")
 }
 ```
-
-- -->
 
 ```
 ➜  zipman git:(master) ✗ go run main.go
