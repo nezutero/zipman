@@ -8,30 +8,28 @@
 
 ###
 
-## supported formats:
+## supported formats and functionality:
 
-- `zip`
-- `tar`
-- `tar.gz`
-- `7z`
-- `bz2`
-- `rar`
+- `zip`     (compression/extraction/adding)
+- `tar`     (compression/extraction/adding)
+- `tar.gz`  (compression/extraction/adding)
+- `7z`      (compression/extraction)
+- `bz2`     (compression/extraction)
+- `rar`     (extraction)
 
 ## project structure:
 
 ```
-├── core
-│   ├── 7z.go
-│   ├── bzip2.go
-│   ├── rar.go
-│   ├── tar.go
-│   ├── targz.go
-│   └── zip.go
+├── 7z.go
+├── bzip2.go
 ├── go.mod
 ├── go.sum
 ├── LICENSE
-├── main.go
-└── README.md
+├── rar.go
+├── README.md
+├── tar.go
+├── targz.go
+└── zip.go
 ```
 
 ## installation

@@ -1,4 +1,4 @@
-package core
+package zipman
 
 import (
 	"archive/tar"
@@ -35,7 +35,7 @@ func CompressToTarGz(tarGzFilename string, filesToCompress []string) error {
 	return nil
 }
 
-func addFileToTar(tarWriter *tar.Writer, filename string) error {
+func addFileToTarGz(tarWriter *tar.Writer, filename string) error {
 	file, err := os.Open(filename)
 	if err != nil {
 		fmt.Println("[ERROR] error opening tar")

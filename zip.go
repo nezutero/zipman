@@ -1,4 +1,4 @@
-package core
+package zipman
 
 import (
 	"archive/zip"
@@ -105,7 +105,7 @@ func ExtractZip(zipFilename, destFoldername string) error {
 			return err
 		}
 	}
-	
+
 	fmt.Println("[SUCCESS] zip extracted successfully")
 	return nil
 }

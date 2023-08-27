@@ -1,4 +1,4 @@
-package core
+package zipman
 
 import (
 	"archive/tar"
