@@ -1,4 +1,4 @@
-<h2 align="center">zipman - archive compressor/extractor golang library</h2>
+<h3 align="center">zipman - archive compressor/extractor golang library</h3>
 
 ###
 
@@ -33,8 +33,6 @@
 ```
 
 ## installation
-
-- use go get:
 
 ```
 go get github.com/kenjitheman/zipman
