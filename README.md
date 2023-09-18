@@ -19,7 +19,7 @@
 
 ## project structure:
 
-```
+```go
 ├── 7z.go
 ├── bzip2.go
 ├── go.mod
@@ -34,13 +34,13 @@
 
 ## installation
 
-```
+```shell
 go get github.com/kenjitheman/zipman
 ```
 
 ## usage
 
-```
+```go
 package main
 
 import "github.com/kenjitheman/zipman"
@@ -53,7 +53,7 @@ func main() {
 }
 ```
 
-```
+```rust
 ➜  zipman git:(master) ✗ go run main.go
 [SUCCESS] Zip compression completed successfully for file: ./file.zip
 ```
