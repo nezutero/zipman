@@ -1,4 +1,4 @@
-<h3 align="center">zipman - archive compressor/extractor golang library</h3>
+## archive compressor/extractor | golang library
 
 ###
 
